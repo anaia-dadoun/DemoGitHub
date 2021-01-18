@@ -5,18 +5,16 @@
  */
 package demogithub;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author dadou
  */
-public class frmMenus extends javax.swing.JFrame {
+public class frmMenu extends javax.swing.JFrame {
 
     /**
-     * Creates new form frmMenus
+     * Creates new form frmMenu
      */
-    public frmMenus() {
+    public frmMenu() {
         initComponents();
     }
 
@@ -33,7 +31,7 @@ public class frmMenus extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("btnDemoMouse");
+        jButton1.setText("jButton1");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -45,16 +43,16 @@ public class frmMenus extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(153, 153, 153)
+                .addGap(123, 123, 123)
                 .addComponent(jButton1)
-                .addContainerGap(144, Short.MAX_VALUE))
+                .addContainerGap(206, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(149, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(120, 120, 120)
                 .addComponent(jButton1)
-                .addGap(130, 130, 130))
+                .addContainerGap(159, Short.MAX_VALUE))
         );
 
         pack();
@@ -62,13 +60,7 @@ public class frmMenus extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
-        
-        
-        
         int nb = 17;
-        JOptionPane.showMessageDialog(this,"la valeure de nb = " + nb);
-        int i = 0;
-        int j = 12;
         
     }//GEN-LAST:event_jButton1MouseClicked
 
@@ -89,20 +81,20 @@ public class frmMenus extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(frmMenus.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(frmMenus.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(frmMenus.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(frmMenus.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new frmMenus().setVisible(true);
+                new frmMenu().setVisible(true);
             }
         });
     }
